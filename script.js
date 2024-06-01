@@ -4,6 +4,7 @@ result = () =>{
     let jsCode = document.getElementById("js-code").value;
     let output = document.getElementById("output");
 
+    output.style.width = "100%";
     output.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style>";
     output.contentWindow.eval(jsCode);
     

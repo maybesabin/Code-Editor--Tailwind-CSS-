@@ -11,38 +11,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="h-screen bg-slate-800 text-white">
+<body class="h-screen bg-slate-800 text-white font-sans">
 
     <style>
         textarea{
             width: 100%;
             height: 28%;
-            background-color: #1f1f1f;
+            background-color: #273236;
             color: white;
             padding: 10px 20px;
             border: none;
             outline: none;
             resize: none;
+            
             font-size: 18px;
         }
     </style>
 
     <div class="w-full h-full flex flex-col lg:flex-row gap-4 px-4">
         <div class="flex flex-col lg:items-start justify-center gap-3 basis-[50%]">
-            <label class="bg-black w-[100%] rounded-lg"><i class="fa-brands fa-html5 px-2"></i>HTML-5</label>
+            <label class="rounded-lg"><i class="fa-brands fa-html5 px-2"></i>HTML-5</label>
             <textarea id="html-code" onkeyup="result()" ></textarea>
 
-            <label class="bg-black w-[100%] rounded-lg"><i class="fa-brands fa-css3-alt px-2"></i>CSS</label>
+            <label class="rounded-lg"><i class="fa-brands fa-css3-alt px-2"></i>CSS</label>
             <textarea id="css-code" onkeyup="result()" ></textarea>
             
-            <label class="bg-black w-[100%] rounded-lg"><i class="fa-brands fa-js px-2"></i>Javascript</label>
+            <label class="rounded-lg"><i class="fa-brands fa-js px-2"></i>Javascript</label>
             <textarea id="js-code" onkeyup="result()" ></textarea>
         </div>
 
         <div class="flex flex-col items-start justify-center gap-3 basis-[50%]">
-            <label class="bg-black w-[100%] rounded-lg"><i class="fa-solid fa-play px-2"></i>Output</label>
-            <iframe id="output" class="w-[100%] h-[95%] bg-white outline-none border-none"></iframe>
-        </div>
+            <label class="rounded-lg"><i class="fa-solid fa-play px-2"></i>Output</label>
+            <iframe id="output" class="w-[100%] h-[94%] bg-white outline-none border-none"></iframe>
+        </div>  
     </div>
 
     <script src="script.js"></script>
